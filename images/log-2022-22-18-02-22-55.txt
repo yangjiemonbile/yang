@@ -1,0 +1,1396 @@
+14:22:55.336 (+0:09:57.590904)
+----- Request -----
+14:22:55.336 (+0:09:57.591358)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "03666b13-9b6f-49d8-a5e7-85c041d981e2"
+    ]
+  },
+  "body": ""
+}
+14:22:55.525 (+0:09:57.780372)
+shouldAttemptRetryOnResponse code = 0
+14:22:55.527 (+0:09:57.782109)
+----- Response -----
+14:22:55.528 (+0:09:57.783568)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=03666b13-9b6f-49d8-a5e7-85c041d981e2",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:22:55 GMT",
+    "request_id": "187f4909667f94db:187f4909667f94db"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854969000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:00.261 (+0:10:02.516337)
+MQTTClient:: Ping response client callback invoked,client = 120016455
+14:23:08.232 (+0:10:10.487401)
+----- Request -----
+14:23:08.232 (+0:10:10.487570)
+{
+  "method": "Method.POST",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/sysn",
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta"
+  },
+  "params": {
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "27f205f7-3768-414d-8af9-13974846b875"
+    ]
+  },
+  "body": "[{\"applianceId\":\"M02H221800076\",\"manufacturerName\":\"AISPEECH\"}]"
+}
+14:23:08.330 (+0:10:10.585770)
+shouldAttemptRetryOnResponse code = 0
+14:23:08.331 (+0:10:10.586554)
+----- Response -----
+14:23:08.331 (+0:10:10.586756)
+{
+  "method": "Method.POST",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/sysn?from=APP&requestId=27f205f7-3768-414d-8af9-13974846b875",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:08 GMT",
+    "request_id": "f32f16c6e488cdb2:f32f16c6e488cdb2"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": []
+  }
+}
+14:23:08.334 (+0:10:10.589618)
+----- Request -----
+14:23:08.334 (+0:10:10.589776)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "4b107d58-ff98-4aba-b56f-6fdb8d7e3297"
+    ]
+  },
+  "body": ""
+}
+14:23:08.440 (+0:10:10.695350)
+shouldAttemptRetryOnResponse code = 0
+14:23:08.441 (+0:10:10.696635)
+----- Response -----
+14:23:08.442 (+0:10:10.697752)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=4b107d58-ff98-4aba-b56f-6fdb8d7e3297",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:08 GMT",
+    "request_id": "3080e8314d0d4a6f:3080e8314d0d4a6f"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854969000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:10.888 (+0:10:13.142963)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"e916d942-9f44-4fd0-8a23-518542fbaf11"}
+14:23:10.889 (+0:10:13.144054)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"b8079fae-130c-42ea-9b87-25120d8fc946"}
+14:23:10.891 (+0:10:13.146276)
+----- Request -----
+14:23:10.891 (+0:10:13.146771)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "6025259c-e6f6-44df-9b4e-050beafed0de"
+    ]
+  },
+  "body": ""
+}
+14:23:10.895 (+0:10:13.150460)
+----- Request -----
+14:23:10.896 (+0:10:13.150940)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "a6bd370e-704b-4a6d-add7-d500e518eb65"
+    ]
+  },
+  "body": ""
+}
+14:23:11.052 (+0:10:13.307272)
+shouldAttemptRetryOnResponse code = 0
+14:23:11.053 (+0:10:13.308572)
+----- Response -----
+14:23:11.055 (+0:10:13.310348)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=6025259c-e6f6-44df-9b4e-050beafed0de",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:11 GMT",
+    "request_id": "86f4ea6757464852:86f4ea6757464852"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854991000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:11.554 (+0:10:13.808913)
+shouldAttemptRetryOnResponse code = 0
+14:23:11.557 (+0:10:13.812312)
+----- Response -----
+14:23:11.560 (+0:10:13.815387)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=a6bd370e-704b-4a6d-add7-d500e518eb65",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:11 GMT",
+    "request_id": "5db5eaf5f1a16c6d:5db5eaf5f1a16c6d"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854991000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:16.004 (+0:10:18.259744)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"6c0deff0-7af1-4f13-9a35-556132a07b65"}
+14:23:16.006 (+0:10:18.261393)
+----- Request -----
+14:23:16.006 (+0:10:18.261763)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "0934df59-32b3-4cdc-95fb-1924e348c708"
+    ]
+  },
+  "body": ""
+}
+14:23:16.115 (+0:10:18.370312)
+shouldAttemptRetryOnResponse code = 0
+14:23:16.118 (+0:10:18.373517)
+----- Response -----
+14:23:16.121 (+0:10:18.376649)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=0934df59-32b3-4cdc-95fb-1924e348c708",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:16 GMT",
+    "request_id": "7f091f0a8e284d5b:7f091f0a8e284d5b"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10240,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854996000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:16.752 (+0:10:19.007403)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"ec2c9910-713e-4ed2-b838-8c9fcad25b01"}
+14:23:16.755 (+0:10:19.010256)
+----- Request -----
+14:23:16.755 (+0:10:19.010885)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "ad0f1251-a495-4d4f-a16e-291ce8cf685c"
+    ]
+  },
+  "body": ""
+}
+14:23:16.858 (+0:10:19.113353)
+shouldAttemptRetryOnResponse code = 0
+14:23:16.860 (+0:10:19.115270)
+----- Response -----
+14:23:16.862 (+0:10:19.117172)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=ad0f1251-a495-4d4f-a16e-291ce8cf685c",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:16 GMT",
+    "request_id": "92bcb9a1ba263750:92bcb9a1ba263750"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854997000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:18.285 (+0:10:20.540667)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"ba8c2364-bfa5-4394-97b8-7eb1ad6b5da6"}
+14:23:18.287 (+0:10:20.542882)
+----- Request -----
+14:23:18.288 (+0:10:20.543360)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "56b1a93a-5e38-4a6b-9f1b-bafc8425c0c7"
+    ]
+  },
+  "body": ""
+}
+14:23:18.435 (+0:10:20.690029)
+shouldAttemptRetryOnResponse code = 0
+14:23:18.436 (+0:10:20.691029)
+----- Response -----
+14:23:18.437 (+0:10:20.691887)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=56b1a93a-5e38-4a6b-9f1b-bafc8425c0c7",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:18 GMT",
+    "request_id": "2f691c4d51c4516d:2f691c4d51c4516d"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10240,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854998000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:19.179 (+0:10:21.433905)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"b8db341c-2b67-4e7f-b0fc-552418c3bfe0"}
+14:23:19.181 (+0:10:21.436306)
+----- Request -----
+14:23:19.181 (+0:10:21.436812)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "d6fddadd-983e-47d3-af22-c8e735f2a2b8"
+    ]
+  },
+  "body": ""
+}
+14:23:19.240 (+0:10:21.495572)
+MQTTClient:: Ping response client callback invoked,client = 120016455
+14:23:19.307 (+0:10:21.562720)
+shouldAttemptRetryOnResponse code = 0
+14:23:19.309 (+0:10:21.564216)
+----- Response -----
+14:23:19.310 (+0:10:21.565596)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=d6fddadd-983e-47d3-af22-c8e735f2a2b8",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:19 GMT",
+    "request_id": "f01a6e557756fc0c:f01a6e557756fc0c"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": [
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076",
+        "applianceType": "CONTROLLER",
+        "manufacturerName": "AISPEECH",
+        "modelName": "中控智慧屏",
+        "friendlyName": "中控智慧屏",
+        "zone": "客厅",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "gateway": {
+            "id": "M02H221800076"
+          }
+        },
+        "properties": {
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_1",
+        "applianceType": "SWITCH",
+        "category": "switch_1",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关1",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_2",
+        "applianceType": "SWITCH",
+        "category": "switch_2",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "开关2",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "off",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_4",
+        "applianceType": "SENSOR",
+        "category": "brightness",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "光感",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "brightness",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "lightIntensity": 10240,
+          "powerState": "on",
+          "onlineState": "online"
+        },
+        "updateTime": 1652854999000
+      },
+      {
+        "userId": "1000002933",
+        "applianceId": "M02H221800076_3",
+        "applianceType": "SENSOR",
+        "category": "wsd",
+        "manufacturerName": "AISPEECH",
+        "modelName": "A4S10",
+        "friendlyName": "温湿度传感器",
+        "group": "41",
+        "additionalApplianceDetails": {
+          "category": "wsd",
+          "bindGateway": "M02H221800076",
+          "parentId": "M02H221800076",
+          "child": true
+        },
+        "properties": {
+          "powerState": "on",
+          "temperature": 30,
+          "humidity": 28,
+          "onlineState": "online"
+        },
+        "updateTime": 1652854879000
+      }
+    ]
+  }
+}
+14:23:27.104 (+0:10:29.359871)
+----- Request -----
+14:23:27.105 (+0:10:29.360403)
+{
+  "method": "Method.POST",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/batch/unbind",
+  "headers": {
+    "Content-Type": "application/json; charset=utf-8",
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta"
+  },
+  "params": {
+    "requestId": [
+      "8553384b-8971-4b16-a5d4-fe4c8f1da8fa"
+    ]
+  },
+  "body": "{\"applianceIds\":[\"M02H221800076\"],\"userId\":1000002933}"
+}
+14:23:27.345 (+0:10:29.600220)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"deviceConfig","data":{},"msgId":"89696bb5-509e-40a0-92fa-aa30351b210d"}
+14:23:27.346 (+0:10:29.600977)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"deviceRefresh"},"msgId":"2384cb90-b703-46bd-8ea1-81181372a96e"}
+14:23:27.347 (+0:10:29.602387)
+----- Request -----
+14:23:27.347 (+0:10:29.602760)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "248a37d1-b699-4415-988f-89c4763f1bd5"
+    ]
+  },
+  "body": ""
+}
+14:23:27.434 (+0:10:29.689645)
+MQTTClient::client receive msg topic = AiSpEeChIoT/toDevice/1000002933/broadcast,msgStr = {"protoVer":1,"msgType":"broadcast","data":{"opt":"sendMessage","message":"{\"homeId\":41,\"isRead\":false,\"msgLv\":2,\"msgType\":\"normal_device_delete\",\"text\":\"2022-05-18 14:23:27 将\\\"中控智慧屏\\\"设备从设备列表中删除\",\"userId\":1000002933}"},"msgId":"fd4cb890-169a-4fb5-9133-cda162ee459c"}
+14:23:27.439 (+0:10:29.694222)
+shouldAttemptRetryOnResponse code = 0
+14:23:27.440 (+0:10:29.695552)
+----- Response -----
+14:23:27.440 (+0:10:29.695873)
+{
+  "method": "Method.POST",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/batch/unbind?requestId=8553384b-8971-4b16-a5d4-fe4c8f1da8fa",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:27 GMT",
+    "request_id": "76c59b626934b0fc:76c59b626934b0fc"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success"
+  }
+}
+14:23:27.443 (+0:10:29.697940)
+----- Request -----
+14:23:27.443 (+0:10:29.698203)
+{
+  "method": "Method.GET",
+  "baseUrl": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list",
+  "headers": {
+    "Authorization": "token-5577fa72-77ef-41a3-b092-f7fed65691f3.beta",
+    "content-type": "text/plain; charset=utf-8"
+  },
+  "params": {
+    "userId": [
+      "1000002933"
+    ],
+    "from": [
+      "APP"
+    ],
+    "requestId": [
+      "2f53442f-c8a7-4909-ada0-fee2c53f3383"
+    ]
+  },
+  "body": ""
+}
+14:23:27.550 (+0:10:29.805469)
+shouldAttemptRetryOnResponse code = 0
+14:23:27.551 (+0:10:29.806299)
+----- Response -----
+14:23:27.551 (+0:10:29.806517)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=2f53442f-c8a7-4909-ada0-fee2c53f3383",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:27 GMT",
+    "request_id": "134dbcbc1745484e:134dbcbc1745484e"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": []
+  }
+}
+14:23:27.703 (+0:10:29.958444)
+shouldAttemptRetryOnResponse code = 0
+14:23:27.705 (+0:10:29.960212)
+----- Response -----
+14:23:27.705 (+0:10:29.960659)
+{
+  "method": "Method.GET",
+  "url": "https://iot-integration.beta.duiopen.com/iotserver/api/v1/device/list?userId=1000002933&from=APP&requestId=248a37d1-b699-4415-988f-89c4763f1bd5",
+  "statusCode": 200,
+  "headers": {
+    "connection": "keep-alive",
+    "content-type": "application/json",
+    "transfer-encoding": "chunked",
+    "date": "Wed, 18 May 2022 06:23:27 GMT",
+    "request_id": "53e03e863f6d861c:53e03e863f6d861c"
+  },
+  "body": {
+    "code": 0,
+    "msg": "success",
+    "data": []
+  }
+}
+14:23:38.280 (+0:10:40.535068)
+MQTTClient:: Ping response client callback invoked,client = 120016455
+14:23:57.580 (+0:10:59.835539)
+MQTTClient:: Ping response client callback invoked,client = 120016455
